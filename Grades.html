@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=utf-8>
+<title> Grading System </title>
+</head>
+
+<body>
+<h1 style="color : red"> Enter Number Grade</h1>
+
+<hr />
+<form name="form1" action = "#">
+Input the Score<input type="text" name="text1" value=" " />
+<input type="button" value="Grades Check"
+onclick='grade()' />
+</form>
+<script>
+function grade(){
+if (document.form1.text1.value>=50 && document.form1.text1.value<60)
+window.alert('Your Grade is D.')
+else if (document.form1.text1.value>=60 && document.form1.text1.value<70)
+window.alert('Your Grade is C.')
+else if (document.form1.text1.value>=70 && document.form1.text1.value<80)
+window.alert('Your Grade is B.')
+else if (document.form1.text1.value>=80 && document.form1.text1.value<100)
+window.alert('Your Grade is A.');
+
+}
+</script>
+</body>
+</html>
